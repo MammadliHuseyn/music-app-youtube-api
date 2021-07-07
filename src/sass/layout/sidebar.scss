@@ -1,0 +1,57 @@
+.sidebar {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    background-color: #121316;
+    padding: 48px 0;
+    font-weight: 700;
+    width: 225px;
+    a {
+        text-decoration: none;
+    }
+    .playlist-item {
+        list-style: none;
+        font-size: 0.9em;
+        color: #888;
+        padding: 5px 16px;
+        font-weight: 100;
+        transition: all 0.1s ease-in-out;
+    }
+    .playlist-heading {
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
+        display: block;
+        padding: 24px 16px;
+        a {
+            color: #fff;
+            &:hover{
+                color:#e97236;
+            }
+        }
+    }
+    .large {
+        a {
+            color: #fff;
+        }
+        font-weight: 700;
+        font-size: 1.1em;
+        border-top: 1px solid #282828;
+        border-bottom: 1px solid #282828;
+        padding: 17px 0;
+        margin: 0 16px;
+        margin-top: -1px;
+        & a:hover {
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+            color: #e97236;
+        }
+    }
+    .large-selected a,
+    .large-selected a:hover {
+        color: #e97236;
+    }
+}

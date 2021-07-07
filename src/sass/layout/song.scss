@@ -1,0 +1,113 @@
+.song-list-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    padding: 96px 24px 0;
+    .song-list-title-block {
+        display: block;
+        padding-bottom: 24px;
+        overflow: auto;
+    }
+    .song-list-thumbnail {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: #000;
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .song-list-details {
+        float: left;
+        width: 60%;
+        padding-left: 24px;
+    }
+    button.song-list-play {
+        float: left;
+        background-color: #e97236;
+        border: none;
+        display: block;
+        clear: left;
+        padding: 12px 19px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        border-radius: 99px;
+        outline: none;
+        color: hsla(0, 0%, 100%, 0.8);
+        margin: 0 24px 8px 0;
+        transition: all 0.2s ease-in-out;
+    }
+    button.song-list-save {
+        float: left;
+        background-color: transparent;
+        border: 1px solid hsla(0, 0%, 100%, 0.4);
+        display: block;
+        padding: 11px 18px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        border-radius: 99px;
+        outline: none;
+        color: hsla(0, 0%, 100%, 0.8);
+        transition: all 0.2s ease-in-out;
+    }
+    button {
+        &:hover {
+            border-color: #fff;
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
+            color: #fff;
+        }
+    }
+}
+.list-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    .list-item {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.08);
+        list-style: none;
+        font-weight: 100;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+            background-color: hsla(0, 0%, 100%, 0.08);
+        }
+        .list-delete-song {
+            transition: color 0.2s;
+            &:hover {
+                color:#e97236;
+            }
+        }
+    }
+    .selected {
+        background-color: hsla(0, 0%, 100%, 0.08);
+        color: #e97236;
+    }
+    .list-track {
+        width: 50%;
+    }
+    .list-artist {
+        width: 30%;
+    }
+    .list-duration {
+        width: 5%;
+        color: #fff;
+    }
+    .list-play-count {
+        width: 15%;
+        color: #fff;
+    }
+    td,
+    th {
+        padding: 14px;
+    }
+}

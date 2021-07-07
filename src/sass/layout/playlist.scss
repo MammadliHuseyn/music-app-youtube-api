@@ -1,0 +1,58 @@
+.browse-playlist {
+    padding: 8px;
+    .browse-playlist-inner {
+        background-color: #16181c;
+        width: 200px;
+        height: 200px;
+        .browse-playlist-link {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            max-width: inherit;
+            font-size: 1.4em;
+            font-weight: 400;
+            padding-bottom: 100%;
+            position: relative;
+            color: #fff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-shadow: 5px 5px 10px 5px #000000;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                text-decoration: none;
+                color: #fff;
+                opacity: 1;
+                -webkit-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                transform: scale(1.03);
+                box-shadow: 5px 5px 15px 5px #000000;
+                transition: all 0.2s ease-in-out;
+            }
+            .btn-delete {
+                background: rgba($color: gray, $alpha: 0.2);
+                border: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &:hover svg {
+                    color: #16181c;
+                }
+                svg {
+                    transition: color 0.2s;
+                    font-size: 2rem;
+                    color: #fff;
+                }
+            }
+            span {
+                position: absolute;
+                top: calc(50% - (20px));
+                font-size: 1.5rem;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}

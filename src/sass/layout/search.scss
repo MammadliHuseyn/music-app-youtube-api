@@ -1,0 +1,28 @@
+#search-form {
+    margin-bottom: 24px;
+    input {
+        width: 75%;
+        background: none;
+        padding: 5px 10px;
+        background-color: lavenderblush;
+        border: none;
+        color: #000;
+    }
+    button {
+        border: none;
+        color: #fff;
+        padding: 5px;
+        width: 20%;
+        background-color: #e97236;
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}
+.search-item{
+    transition: all .2s;
+    cursor: pointer;
+    &:hover{
+        transform:scale(1.1);
+    }
+}

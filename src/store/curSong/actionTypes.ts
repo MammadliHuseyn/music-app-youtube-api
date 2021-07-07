@@ -1,0 +1,5 @@
+export enum CUR_SONG_ACTIONS {
+    SET_SONG = "SET_SONG",
+    SET_PREV_SONG = "SET_PREV_SONG",
+    SET_NEXT_SONG = "SET_NEXT_SONG"
+}

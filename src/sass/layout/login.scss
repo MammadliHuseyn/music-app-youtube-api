@@ -1,0 +1,41 @@
+#login-form {
+    width: 50%;
+    padding: 10px;
+    .abcRioButtonContentWrapper{
+        width: 100%;
+    }
+    .abcRioButton{
+        width:100%!important;
+    }
+    .form-element {
+        margin-top: 1rem;
+        width: 100%;
+        label {
+            display: block;
+        }
+        input {
+            width: 100%;
+            background: none;
+            padding: 5px 10px;
+            background-color: lavenderblush;
+            border: none;
+            color: #000;
+        }
+        .validation-error {
+            color: #e97236;
+        }
+    }
+    .form-submit {
+        margin: 20px 0;
+        button {
+            border: none;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            background-color: #e97236;
+            &:active {
+                transform: translateY(2px);
+            }
+        }
+    }
+}

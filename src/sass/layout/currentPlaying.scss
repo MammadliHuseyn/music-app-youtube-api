@@ -1,0 +1,94 @@
+.song-controller {
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #26292e;
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .controller-buttons {
+            background-color: none;
+            background: transparent;
+            border: none;
+            color: #fff;
+            transition: color 0.1s;
+            margin-left: 1rem;
+            &:hover {
+                color: #e97236;
+            }
+        }
+    }
+    .controls {
+        padding: 0 40px;
+    }
+    .volume {
+        padding: 27px 25px 0 0;
+    }
+    .video-detail {
+        display: none;
+    }
+    .details {
+        padding: 0;
+        overflow: hidden;
+        font-weight: 200;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            pointer-events: none;
+            background: linear-gradient(
+                270deg,
+                #26292e,
+                #26292e 30%,
+                rgba(38, 41, 46, 0.9) 50%,
+                rgba(38, 41, 46, 0.6) 80%,
+                rgba(38, 41, 46, 0)
+            );
+            width: 40px;
+            height: 100%;
+        }
+        .track {
+            color: #fff;
+            width: 800px;
+            margin: 30px 0 4px;
+            font-size: 0.9em;
+        }
+        .artist {
+            width: 800px;
+            font-size: 0.75em;
+            color: hsla(0, 0%, 100%, 0.5);
+        }
+    }
+    &-thumbnail {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        float: left;
+        margin: 15px;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    #volume-div {
+        width:100px;
+        padding-top:5px;
+    }
+}
+.MuiSlider-rail {
+    background-color: #fff !important;
+}
+.MuiSlider-track,
+.MuiSlider-thumb {
+    background-color: #e97236 !important;
+}
+
+.MuiSlider-thumb:hover {
+    box-shadow: 0px 0px 30px 5px rgba(233, 114, 54, 0.5);
+}
