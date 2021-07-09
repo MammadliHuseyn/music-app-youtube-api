@@ -1,7 +1,6 @@
 import React from 'react';
 import './../../sass/layout/song.scss';
 import { SongItem } from './SongItem';
-import PlayIcon from '@material-ui/icons/PlayArrow';
 import { useParams } from 'react-router-dom';
 import { IPlaylist } from '../../interfaces/types';
 import { useSelector } from 'react-redux';
@@ -19,7 +18,7 @@ export const Songs = () => {
     return (
         <div className="outer-container">
             <div className="browse-container p-0"
-                style={{ "backgroundImage": `${curPlaying?.cur.id ? `url(https://img.youtube.com/vi/${curPlaying?.cur.id}/maxresdefault.jpg)` : ''}` }}>
+                style={{ "backgroundImage": `${(curPlaying?.cur.id ? `url(https://img.youtube.com/vi/${curPlaying?.cur.id}/maxresdefault.jpg)` : '') || ''}` }}>
                 <div
                     className="song-list-container">
                     <div className="song-list-title-block">
@@ -35,8 +34,6 @@ export const Songs = () => {
                             <span>{plist?.songs.length} song(s)</span>
                             <br />
                             <br />
-                            <button className="song-list-play d-flex align-items-center"><PlayIcon /> Play All</button>
-                            <button className="song-list-save">Favourite</button>
                         </div>
                     </div>
                     <table
